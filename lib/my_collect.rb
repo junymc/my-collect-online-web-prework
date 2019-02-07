@@ -9,18 +9,3 @@ def my_collect(a)
   end
   array
 end
-
-
-array.map do |element|
-  element.capitalized
-end
-
-my_collect do |element|
-  element.capitalized
-end
-
-self.map() {
-  array = []
-  array.push(yield)
-  array
-}
