@@ -1,7 +1,12 @@
+collection = ['ruby', 'javascript', 'python', 'objective-c']
+my_collect(collection) do |lang|
+  lang.upcase
+end
+
 def my_collect(array)
   i = 0
   while i < array.length
-    yield array[i] {|name| name.split(" ").first}
+    yield
 
     i = i + 1
   end
